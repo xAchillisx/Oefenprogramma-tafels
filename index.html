@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css" />
+    <title>Tafels Emma</title>
+</head>
+
+<body>
+    <div class="result">
+        <div class="header">
+            <ul class="unlist">Uitslag sessie
+                <li>Fouten
+                    <td><span class="sessieFouten" id="sessieFouten"></span></td>
+                </li>
+                <li>Juist
+                    <td><span class="sessieJuist" id="sessieJuist"></span></td>
+                </li>
+                <li>Percentage
+                    <td><span class="sessiePercentage" id="sessiePercentage"></span> %</td>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Emma's Oefenprogramma</h1>
+        <div id="game" class="game">
+            <div class="selection">
+                <form action="#">
+                    <select name="startTafel" id="startTafel">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+                    <!--
+                    <select name="symbool" id="oefenSymbool">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="1">+ & -</option>
+                    <option value="*">x</option>
+                    <option value="/">/</option>
+                    <option value="2">x & /</option>
+                    <option value="3">Alles</option> 
+            </select>
+            -->
+                    <select name="eindTafel" id="eindTafel">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                    <button type="button" id="keuzeTafelsBtn" class="submit" name="submit">Kies tafels</button>
+
+                </form>
+            </div>
+            <div class="tafelSelectie">
+                <p>Oefeningen tafels <span class="min-num"></span> tot en met <span class="max-num"></span></p>
+            </div>
+            <div class="oefening">
+                <p class="tekst">Geef de oplossing van <span class="tafel" id="tafel"> </span> <span class="symbool" id="symbool"></span> <span class="product" id="product"></span></p>
+            </div>
+            <div class="input">
+                <input type="number" id="guess-input" placeholder="Vul in">
+                <input type="button" value="Probeer" id='guess-btn'>
+            </div>
+            <div class="response">
+                <p class="message"></p>
+                <div class="img">
+                    <img src="img/smile.gif" id="smilySmile" hidden alt="">
+                    <img src="img/sad.gif" id="smilySad" hidden alt="">
+                    <img src="img/ween.gif" id="smilyWeen" hidden alt="">
+                    <img src="img/angry.gif" id="smilyAngry" hidden alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
